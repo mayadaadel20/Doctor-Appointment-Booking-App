@@ -4,17 +4,6 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 import '../widgets/doctor_info.dart';
 
 class AppointScreen extends StatelessWidget {
-  final DoctorInfo doctor;
-
-  AppointScreen({required this.doctor});
-  List<DoctorInfo> doctors = [
-DoctorInfo(name: "Dr Aya", image: "images/doctor1.jpg", spe: "Surgeon", rate: "4.9"),
-DoctorInfo(name: "Dr Amal", image: "images/doctor2.jpg", spe: "Cardiologist", rate: "4.3"),
-DoctorInfo(name: "Dr Hassan", image: "images/doctor3.jpg", spe: "Dentist", rate: "4.1"),
-DoctorInfo(name: "Dr Mohammad", image: "images/doctor4.jpg", spe: "Emergency Doctor", rate: "4.8"),
-DoctorInfo(name: "Dr Mostafa", image: "images/doctor5.jpg", spe: "Gynecologist", rate: "4.0"),
-];
-
   List docName = [
     "Dr Aya",
     "Dr Aml",
@@ -39,7 +28,6 @@ DoctorInfo(name: "Dr Mostafa", image: "images/doctor5.jpg", spe: "Gynecologist",
     "4.0",
   ];
 
-
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
@@ -56,7 +44,7 @@ DoctorInfo(name: "Dr Mostafa", image: "images/doctor5.jpg", spe: "Gynecologist",
                   height: MediaQuery.of(context).size.height / 2.1,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage(doctor.image),
+                      image: AssetImage("images/doctor1.jpg"),
                       fit: BoxFit.cover,
                     ),
                     borderRadius: BorderRadius.only(

@@ -68,7 +68,7 @@ class DoctorsSection extends StatelessWidget {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => AppointScreen(doctor: doctors[index],),
+                                  builder: (context) => AppointScreen(),
                                 ));
                           },
                           child: ClipRRect(
